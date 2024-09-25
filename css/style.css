@@ -5,7 +5,7 @@
 
 /* GLOBAL SETTINGS */
 
-*{
+* {
   margin: 0;
   padding: 0;
   outline: none;
@@ -13,8 +13,8 @@
   text-decoration: none; 
 }
 
-body{
-  background-color: #7ed957;
+body {
+  background-color: #9b1b30; /* Rojo Gryffindor */
   padding-top: 50px;
   overflow-x: hidden;
   font-family: 'Encode Sans SC', sans-serif;
@@ -23,11 +23,11 @@ body{
 
 /* NAV AND LOGO */
 
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: #5e17eb;
+  background-color: #a74b27; /* Rojo más oscuro */
   position: fixed;
   top: 0;
   width: 100%;
@@ -35,129 +35,125 @@ body{
   margin-bottom: 20px;
 }
 
-.header .logo{
-  color: #ffffff;
+.header .logo {
+  color: #FFD700; /* Dorado */
   padding: 0 20px;
   font-size: large;
 }
 
-.nav{
+.nav {
   display: flex;
   flex-wrap: wrap;
 }
 
-.nav li{
+.nav li {
   padding: 10px;
 }
 
-.nav li a{
+.nav li a {
   display: block;
   padding: 10px;
-  color: #ffffff;
+  color: #FFD700; /* Dorado */
   transition: background-color .2s;
 }
 
-.nav li a:hover{
-  background-color: #5e17eb;
+.nav li a:hover {
+  background-color: #a74b27; /* Rojo más oscuro para hover */
 }
 
-.active{
-  background-color: #5e17eb;
+.active {
+  background-color: #a74b27; /* Rojo más oscuro */
 }
 
 /* MAIN SECTION */
 
-.main-sec{
+.main-sec {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-.profile{
+.profile {
   padding: 20px;
 }
 
-.profile img{
+.profile img {
   height: 180px;
   max-width: 180%;
   border-radius: 50%;
 }
 
-.profile p{
-  color: #ffffff;
+.profile p {
+  color: #FFD700; /* Dorado */
   padding: 12px;
   font-family: 'Encode Sans SC', sans-serif;
   font-weight: 700;
 }
 
-.profile h1{
-  color: #ffffff;
+.profile h1 {
+  color: #FFD700; /* Dorado */
   padding: 10px;
   font-family: 'Encode Sans SC', sans-serif;
   font-weight: 700;
 }
 
-
-
-
-
-.links{
+.links {
   width: 100%;
 }
 
-.links li{
+.links li {
   box-sizing: border-box;
   padding: 0;
   margin-bottom: 15px;
-  background-color: #5e17eb;
-  border: 2px solid #ffffff;
+  background-color: #a74b27; /* Rojo más oscuro */
+  border: 2px solid #FFD700; /* Dorado */
 }
 
-.links li a{
-  background-color: #ffffff;
-  color: #5e17eb;
+.links li a {
+  background-color: #FFD700; /* Dorado */
+  color: #9b1b30; /* Rojo Gryffindor */
   padding: 15px 20px;
   display: block;
   transition: all .2s;
 }
 
-.links li a:hover{
-  background-color: #5e17eb;
-  color: #ffffff;
+.links li a:hover {
+  background-color: #9b1b30; /* Rojo Gryffindor */
+  color: #FFD700; /* Dorado */
 }
 
 /* LINKS SECTION */
 
-.remove{
+.remove {
   display: none;
 }
 
-.links-sec{
+.links-sec {
   max-width: 700px;
   margin: 0 auto;
   text-align: center;
 }
 
-.links-sec h1{
+.links-sec h1 {
   padding-top: 40px;
   padding-bottom: 30px;
-  color: whitesmoke;
+  color: #FFD700; /* Dorado */
   font-family: 'Encode Sans SC', sans-serif;
   font-size: 2rem;
 }
 
-/* RESPONSIVE SETTINGS*/
+/* RESPONSIVE SETTINGS */
 
-@media (max-width: 700px){
-  body{
+@media (max-width: 700px) {
+  body {
     width: 100%;
   }
-  .main-sec{
+  .main-sec {
     padding-top: 20px;
     padding-left: 10px;
     padding-right: 10px;
   }
-  .nav{
+  .nav {
     flex-wrap: nowrap;
     text-align: center;
   }
@@ -166,7 +162,7 @@ body{
 .subscribe-form {
   text-align: center;
   margin-top: 50px;
-  color: #ffffff;
+  color: #FFD700; /* Dorado */
 }
 
 .subscribe-form h2 {
@@ -181,8 +177,8 @@ body{
 
 .subscribe-form button {
   padding: 10px 20px;
-  background-color: #5e17eb;
-  color: #ffffff;
+  background-color: #9b1b30; /* Rojo Gryffindor */
+  color: #FFD700; /* Dorado */
   border: none;
   cursor: pointer;
 }
