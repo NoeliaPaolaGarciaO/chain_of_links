@@ -78,12 +78,9 @@ body{
 }
 
 .profile img {
-    ancho: 40píxeles;
-    altura: 40píxeles;
-    mostrar:bloquear;
-    margen: 40píxelesauto20píxeles;
-    radio del borde: 50%;
-    -webkit-tap-resaltar-color:transparente;
+  height: 150px;
+  max-width: 100%;
+  border-radius: 50%;
 }
 
 .profile p{
