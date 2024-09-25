@@ -77,10 +77,13 @@ body{
   padding: 20px;
 }
 
-.profile img{
-  height: 150px;
-  max-width: 100%;
-  border-radius: 50%;
+.profile img {
+    width: 150px; /* Ajusta el tamaño de la imagen */
+    height: 150px; /* Asegúrate de que la altura y el ancho sean iguales */
+    border-radius: 50%; /* Hace la imagen circular */
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .profile p{
