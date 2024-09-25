@@ -78,12 +78,12 @@ body{
 }
 
 .profile img {
-    width: 150px; /* Ajusta el tamaño de la imagen */
-    height: 150px; /* Asegúrate de que la altura y el ancho sean iguales */
-    border-radius: 50%; /* Hace la imagen circular */
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    ancho: 96píxeles;
+    altura: 96píxeles;
+    mostrar:bloquear;
+    margen: 40píxelesauto20píxeles;
+    radio del borde: 50%;
+    -webkit-tap-resaltar-color:transparente;
 }
 
 .profile p{
