@@ -1,1 +1,1 @@
-// Proyecto preparado para futuras funcionalidades.
+// No se requiere JavaScript por el momento.
