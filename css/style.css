@@ -20,11 +20,11 @@ body {
 }
 
 /* ==========================
-   TARJETA
+   TARJETA PRINCIPAL
 ========================== */
 .container {
     width: 100%;
-    max-width: 480px;
+    max-width: 520px;
 }
 
 .card {
@@ -101,77 +101,81 @@ h1 {
 .section-creativity .section-title { color: #FAF9F7; }
 
 /* ==========================
-   BOTONES DINÁMICOS
+   BOTONES EN MOSAICO
 ========================== */
-.buttons {
-    display: flex;
-    flex-direction: column;
-    gap: 16px;
+.buttons.grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 18px;
 }
 
-.buttons a {
+.buttons.grid a {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: center;
-    padding: 16px 20px;
-    border-radius: 16px;
+    justify-content: center;
+    padding: 22px;
+    border-radius: 18px;
     text-decoration: none;
     color: #FAF9F7;
     background: linear-gradient(135deg, #3D4D88, #9B79CD);
-    background-size: 200% 200%;
     border: 1px solid rgba(255, 255, 255, 0.15);
     box-shadow: 0 8px 20px rgba(0,0,0,0.25);
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeInUp 0.6s forwards;
-    transition: background-position 0.5s, transform 0.3s, box-shadow 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-position 0.5s;
+    background-size: 200% 200%;
+    position: relative;
+    overflow: hidden;
 }
 
-.buttons a:nth-child(1) { animation-delay: 0.2s; }
-.buttons a:nth-child(2) { animation-delay: 0.4s; }
-.buttons a:nth-child(3) { animation-delay: 0.6s; }
-.buttons a:nth-child(4) { animation-delay: 0.8s; }
-.buttons a:nth-child(5) { animation-delay: 1s; }
-
-.buttons a span {
-    flex: 1;
-    text-align: left;
-    margin-left: 14px;
-    font-weight: 600;
-}
-
-.buttons a:hover {
-    background-position: right center;
-    transform: scale(1.05);
-    box-shadow: 0 12px 30px rgba(0,0,0,0.35);
-}
-
-.buttons a i {
+/* Ícono grande */
+.buttons.grid a i {
+    font-size: 1.8rem;
+    margin-bottom: 10px;
     transition: transform 0.35s;
 }
 
-.buttons a:hover i:first-child {
-    transform: rotate(-10deg) scale(1.2);
+/* Texto */
+.buttons.grid a span {
+    font-weight: 600;
+    text-align: center;
 }
 
-.buttons a:hover i:last-child {
-    transform: translateX(8px) rotate(10deg);
+/* Hover dinámico */
+.buttons.grid a:hover {
+    background-position: right center;
+    transform: translateY(-6px) scale(1.05);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.35);
+}
+
+.buttons.grid a:hover i {
+    transform: rotate(-8deg) scale(1.2);
 }
 
 /* ==========================
-   ANIMACIÓN DE ENTRADA
+   EFECTO AVIÓN ✈️
 ========================== */
-@keyframes fadeInUp {
-    to {
-        opacity: 1;
-        transform: translateY(0);
-    }
+.buttons.grid a::after {
+    content: "✈️";
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0;
+    right: -20px;
+    top: 10px;
+    transition: all 0.5s ease;
+}
+
+.buttons.grid a:hover::after {
+    opacity: 1;
+    right: 10px;
 }
 
 /* ==========================
    RESPONSIVE
 ========================== */
-@media(max-width:500px) {
+@media(max-width:768px) {
+    .buttons.grid {
+        grid-template-columns: 1fr; /* en móvil se ve en una columna */
+    }
     .card {
         padding: 28px 20px;
     }
