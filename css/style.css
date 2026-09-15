@@ -14,9 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px;
-    background: linear-gradient(135deg, #3D4D88, #7c3aed, #BCF7EC);
-    background-size: 300% 300%;
-    animation: gradient 15s ease infinite;
+    background: linear-gradient(135deg, #3D4D88, #7C3AED, #BCF7EC); /* paleta fija */
+    background-attachment: fixed; /* asegura consistencia */
 }
 
 /* ==========================
