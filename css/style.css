@@ -171,19 +171,4 @@ h1 {
 ========================== */
 @media(max-width:768px) {
     .buttons.grid {
-        grid-template-columns: 1fr; /* en móvil se ve en una columna */
-    }
-    .card {
-        padding: 28px 20px;
-    }
-    .avatar {
-        width: 110px;
-        height: 110px;
-    }
-    h1 {
-        font-size: 1.7rem;
-    }
-    .welcome {
-        font-size: 0.95rem;
-    }
-}
+        grid-template-columns: 1fr;
