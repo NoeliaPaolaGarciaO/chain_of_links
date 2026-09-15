@@ -1,264 +1,162 @@
 /* ==========================
    RESET
 ========================== */
-
-*{
-
-    margin:0;
-
-    padding:0;
-
-    box-sizing:border-box;
-
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-body{
-
-    font-family:'Poppins',sans-serif;
-
-    min-height:100vh;
-
-    display:flex;
-
-    justify-content:center;
-
-    align-items:center;
-
-    padding:25px;
-
-    background:
-    linear-gradient(135deg,#7c3aed,#4f46e5,#06b6d4);
-
-    background-size:300% 300%;
-
-    animation:gradient 12s ease infinite;
-
+body {
+    font-family: 'Poppins', sans-serif;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    background: linear-gradient(135deg, #3D4D88, #7c3aed, #BCF7EC);
+    background-size: 300% 300%;
+    animation: gradient 15s ease infinite;
 }
 
 /* ==========================
    ANIMACIÓN FONDO
 ========================== */
-
-@keyframes gradient{
-
-0%{
-
-background-position:0% 50%;
-
-}
-
-50%{
-
-background-position:100% 50%;
-
-}
-
-100%{
-
-background-position:0% 50%;
-
-}
-
+@keyframes gradient {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
 }
 
 /* ==========================
    TARJETA
 ========================== */
-
-.container{
-
-    width:100%;
-
-    max-width:430px;
-
+.container {
+    width: 100%;
+    max-width: 430px;
 }
 
-.card{
+.card {
+    background: rgba(255, 255, 255, 0.12);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255, 255, 255, 0.25);
+    border-radius: 28px;
+    padding: 40px 30px;
+    text-align: center;
+    box-shadow: 0 25px 50px rgba(0, 0, 0, 0.25);
+    transition: 0.4s;
+}
 
-    background:rgba(255,255,255,.15);
-
-    backdrop-filter:blur(18px);
-
-    border:1px solid rgba(255,255,255,.20);
-
-    border-radius:30px;
-
-    padding:45px 35px;
-
-    text-align:center;
-
-    box-shadow:
-
-    0 20px 40px rgba(0,0,0,.20);
-
+.card:hover {
+    transform: translateY(-5px);
 }
 
 /* ==========================
    FOTO
 ========================== */
-
-.avatar{
-
-    width:150px;
-
-    height:150px;
-
-    object-fit:cover;
-
-    border-radius:50%;
-
-    border:5px solid rgba(255,255,255,.85);
-
-    margin-bottom:25px;
-
-    transition:.4s;
-
+.avatar {
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #BCF7EC;
+    margin-bottom: 20px;
+    transition: 0.4s;
 }
 
-.avatar:hover{
-
-    transform:scale(1.05);
-
+.avatar:hover {
+    transform: scale(1.08) rotate(2deg);
 }
 
 /* ==========================
    TEXTOS
 ========================== */
-
-h1{
-
-    color:white;
-
-    font-size:2rem;
-
-    margin-bottom:15px;
-
+h1 {
+    color: #FAF9F7;
+    font-size: 2.1rem;
+    font-weight: 700;
+    margin-bottom: 12px;
 }
 
-.welcome{
-
-    color:white;
-
-    font-size:1.05rem;
-
-    margin-bottom:25px;
-
-    font-weight:500;
-
+.welcome {
+    color: #BCF7EC;
+    font-size: 1.05rem;
+    margin-bottom: 12px;
+    font-weight: 500;
 }
 
-.info{
-
-    color:#ecfeff;
-
-    line-height:1.8;
-
-    margin-bottom:25px;
-
+.info {
+    color: #E0E7FF;
+    line-height: 1.6;
+    margin-bottom: 12px;
 }
 
-.description{
-
-    color:white;
-
-    line-height:1.7;
-
-    margin-bottom:35px;
-
+.description {
+    color: #FAF9F7;
+    line-height: 1.6;
+    margin-bottom: 18px;
 }
 
 /* ==========================
    BOTONES
 ========================== */
-
-.buttons{
-
-    display:flex;
-
-    flex-direction:column;
-
-    gap:18px;
-
+.buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+    margin-top: 8px;
 }
 
-.buttons a{
-
-    display:flex;
-
-    justify-content:space-between;
-
-    align-items:center;
-
-    padding:18px 22px;
-
-    border-radius:18px;
-
-    text-decoration:none;
-
-    color:white;
-
-    background:rgba(255,255,255,.12);
-
-    border:1px solid rgba(255,255,255,.15);
-
-    transition:.35s;
-
+.buttons a {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 16px 20px;
+    border-radius: 16px;
+    text-decoration: none;
+    color: #FAF9F7;
+    background: rgba(255, 255, 255, 0.08);
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    transition: 0.35s;
 }
 
-.buttons a span{
-
-    flex:1;
-
-    text-align:left;
-
-    margin-left:16px;
-
-    font-weight:600;
-
+.buttons a span {
+    flex: 1;
+    text-align: left;
+    margin-left: 14px;
+    font-weight: 600;
 }
 
-.buttons a:hover{
+.buttons a:hover {
+    background: linear-gradient(135deg, #7c3aed, #06b6d4);
+    color: #FAF9F7;
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0, 0, 0, 0.25);
+}
 
-    background:white;
+.buttons a i {
+    transition: transform 0.35s;
+}
 
-    color:#4f46e5;
-
-    transform:translateY(-5px);
-
-    box-shadow:0 15px 30px rgba(0,0,0,.20);
-
+.buttons a:hover i:last-child {
+    transform: translateX(6px);
 }
 
 /* ==========================
    RESPONSIVE
 ========================== */
-
-@media(max-width:500px){
-
-.card{
-
-padding:35px 25px;
-
-}
-
-.avatar{
-
-width:120px;
-
-height:120px;
-
-}
-
-h1{
-
-font-size:1.7rem;
-
-}
-
-.welcome{
-
-font-size:1rem;
-
-}
-
+@media(max-width:500px) {
+    .card {
+        padding: 28px 20px;
+    }
+    .avatar {
+        width: 110px;
+        height: 110px;
+    }
+    h1 {
+        font-size: 1.7rem;
+    }
+    .welcome {
+        font-size: 0.95rem;
+    }
 }
