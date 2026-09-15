@@ -93,12 +93,8 @@ h1 {
     margin: 25px 0 15px;
     padding-bottom: 6px;
     border-bottom: 2px solid rgba(255,255,255,0.25);
+    color: #BCF7EC; /* mismo color para todas las secciones */
 }
-
-/* Colores temáticos */
-.section-tourism .section-title { color: #BCF7EC; }
-.section-tech .section-title { color: #BCF7EC; }
-.section-creativity .section-title { color: #BCF7EC; }
 
 /* ==========================
    BOTONES EN MOSAICO
@@ -132,6 +128,7 @@ h1 {
     font-size: 1.8rem;
     margin-bottom: 10px;
     transition: transform 0.35s;
+    color: #BCF7EC; /* íconos en aqua */
 }
 
 /* Texto */
