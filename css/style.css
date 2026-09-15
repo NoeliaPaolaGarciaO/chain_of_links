@@ -14,7 +14,7 @@ body {
     justify-content: center;
     align-items: center;
     padding: 25px;
-    background: linear-gradient(135deg, #3D4D88, #7C3AED, #BCF7EC); /* paleta fija */
+    background: linear-gradient(135deg, #3D4D88 0%, #7C3AED 50%, #BCF7EC 100%);
     background-attachment: fixed; /* asegura consistencia */
 }
 
