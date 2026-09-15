@@ -7,3 +7,5 @@ Una página simple donde reúno mis enlaces favoritos para compartirlos fácilme
 - 💼 Portfolio
 - 💙 LinkedIn
 - ✍️ Substack
+- ✍️ La maleta azul tomo 1
+-    Instagram
